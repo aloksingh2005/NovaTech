@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our portfolio of web development, design, and digital marketing projects">
+    <title>Portfolio - Your Company</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Portfolio Page CSS -->
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Portfolio Header -->
+    <header class="portfolio-header">
+        <div class="portfolio-navbar">
+            <a href="index.html" class="portfolio-logo">
+                <span>Your</span>Company
+            </a>
+            <div class="portfolio-nav-menu">
+                <ul class="portfolio-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="portfolio-nav-btn">
+                    <a href="contact.html" class="btn">Get a Quote</a>
+                </div>
+            </div>
+            <div class="portfolio-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Our Work</div>
+                <h1>Crafted with <span class="accent-text">Passion</span><br>Built for <span class="accent-text">Results</span></h1>
+                <p>Explore our carefully curated collection of projects that showcase our commitment to excellence, innovation, and client success.</p>
+            </div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio-showcase">
+        <div class="container">
+            <div class="portfolio-filter">
+                <ul>
+                    <li class="filter-active" data-filter="all">All Projects</li>
+                    <li data-filter="web">Web Design</li>
+                    <li data-filter="app">Mobile Apps</li>
+                    <li data-filter="ecommerce">E-commerce</li>
+                    <li data-filter="branding">Branding</li>
+                </ul>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card web">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/web-design.jpg" alt="Modern Website Project">
+                        <div class="project-overlay">
+                            <div class="project-category">Web Design</div>
+                            <a href="#" class="view-project" data-modal="modal-1">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ModernFolio</h3>
+                        <p>Responsive portfolio website with dark mode and smooth animations</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card app">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/fitness-app-project.jpg" alt="Fitness App Project">
+                        <div class="project-overlay">
+                            <div class="project-category">Mobile App</div>
+                            <a href="#" class="view-project" data-modal="modal-2">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTrack Pro</h3>
+                        <p>iOS and Android fitness tracking app with social features</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card ecommerce">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/e-commerce.jpg" alt="E-commerce Project">
+                        <div class="project-overlay">
+                            <div class="project-category">E-commerce</div>
+                            <a href="#" class="view-project" data-modal="modal-3">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ShopEase</h3>
+                        <p>Full-featured e-commerce platform with Stripe integration</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card branding">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/branding.jpg" alt="Brand Identity Project">
+                        <div class="project-overlay">
+                            <div class="project-category">Branding</div>
+                            <a href="#" class="view-project" data-modal="modal-4">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NovaTech Rebrand</h3>
+                        <p>Complete brand identity redesign for tech startup</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card web">
+                    <div class="project-image">
+                        <img src="assets/images/portfolio/mobile-app.jpg" alt="Dashboard UI Project">
+                        <div class="project-overlay">
+                            <div class="project-category">Web Design</div>
+                            <a href="#" class="view-project" data-modal="modal-5">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AdminDash</h3>
+                        <p>Customizable admin dashboard with dark/light themes</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card app">
+                    <div class="project-image">
+                        <img src="assets\images\portfolio\fast-food.jpg" alt="Food Delivery App Project">
+                        <div class="project-overlay">
+                            <div class="project-category">Mobile App</div>
+                            <a href="#" class="view-project" data-modal="modal-6">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FoodFast</h3>
+                        <p>Food delivery app with real-time order tracking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Process Section -->
+    <section class="project-process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Process</span>
+                <h2>How We Bring Projects to Life</h2>
+                <p>Our proven approach ensures we deliver quality at every step</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Discovery</h3>
+                    <p>We start by understanding your business, goals, target audience, and project requirements in depth.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Planning & Design</h3>
+                    <p>We create wireframes and designs that align with your brand and provide the best user experience.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Our developers bring the designs to life using clean, efficient, and maintainable code.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Testing & Launch</h3>
+                    <p>We thoroughly test across devices and browsers before launching your project to the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>What Our Clients Say</h2>
+                <p>Feedback from some of our satisfied clients</p>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Random Agency transformed our online presence completely. Their attention to detail and innovative approach helped us increase conversions by 45% within three months of launching our new website."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client Portrait">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Working with Random Agency was a game-changer for our e-commerce business. Their strategic approach to UX design and seamless checkout implementation boosted our sales by 60% in the first quarter."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Client Portrait">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Founder, StyleMarket</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-nav">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's collaborate to create something amazing together.</p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="portfolio-modals">
+        <!-- Modal 1 -->
+        <div id="modal-1" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div class="modal-body">
+                    <div class="project-header">
+                        <h2>ModernFolio</h2>
+                        <div class="project-category">Web Design</div>
+                    </div>
+                    <div class="project-showcase">
+                        <img src="https://via.placeholder.com/1200x675/4A90E2/FFFFFF?text=ModernFolio+Project" alt="ModernFolio Project">
+                    </div>
+                    <div class="project-description">
+                        <div class="description-content">
+                            <h3>Project Overview</h3>
+                            <p>ModernFolio is a responsive portfolio website template designed for creative professionals. The project focused on providing a clean, modern interface with smooth transitions, dark mode support, and optimal performance across all devices.</p>
+                            
+                            <h3>The Challenge</h3>
+                            <p>The client needed a portfolio that would stand out in a competitive market while showcasing their work in the best possible light. They required a solution that would be easy to update and maintain while providing a seamless experience for visitors.</p>
+                            
+                            <h3>The Solution</h3>
+                            <p>We developed a custom portfolio with a focus on visual impact and performance. Key features include:</p>
+                            <ul>
+                                <li>Responsive design that works flawlessly on all devices</li>
+                                <li>Dark/light mode toggle with user preference memory</li>
+                                <li>Optimized image loading for fast page speeds</li>
+                                <li>Interactive project showcases with subtle animations</li>
+                                <li>Integrated contact form with validation</li>
+                            </ul>
+                        </div>
+                        <div class="project-meta">
+                            <div class="meta-item">
+                                <h4>Client</h4>
+                                <p>Design Studio Inc.</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Timeline</h4>
+                                <p>4 Weeks</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Services</h4>
+                                <p>Web Design, Front-end Development, UI/UX</p>
+                            </div>
+                            <div class="meta-item">
+                                <h4>Technologies</h4>
+                                <p>HTML5, CSS3, JavaScript, React</p>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="btn primary-btn">View Live Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Footer -->
+    <footer class="portfolio-footer">
+        <div class="portfolio-footer-container">
+            <div class="portfolio-footer-column">
+                <div class="portfolio-footer-logo">
+                    <a href="index.html">
+                        <span>Your</span>Company
+                    </a>
+                </div>
+                <p>We provide innovative solutions for businesses of all sizes. Our expertise in digital transformation helps clients achieve their goals.</p>
+                <div class="portfolio-social-icons">
+                    <a href="#" class="portfolio-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="portfolio-social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="portfolio-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="portfolio-social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-footer-column">
+                <h4 class="portfolio-footer-heading">Quick Links</h4>
+                <ul class="portfolio-footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="portfolio.html" class="active"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                    <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="portfolio-footer-column">
+                <h4 class="portfolio-footer-heading">Our Services</h4>
+                <ul class="portfolio-footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Digital Marketing</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> App Development</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Brand Strategy</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Consulting</a></li>
+                </ul>
+            </div>
+            
+            <div class="portfolio-footer-column">
+                <h4 class="portfolio-footer-heading">Contact Info</h4>
+                <ul class="portfolio-contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Business Avenue<br>New York, NY 10001</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+1 (234) 567-8901</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@yourcompany.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Monday - Friday: 9am - 5pm</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="portfolio-copyright">
+            <p>&copy; <span class="portfolio-copyright-year">2023</span> YourCompany. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="portfolio-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/script.js"></script>
+    <!-- Portfolio JS -->
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>

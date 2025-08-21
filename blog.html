@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read our latest articles and news on web development, design, and digital marketing">
+    <title>Blog - Nova Tech</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Blog Page CSS -->
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo/logo.jpg" alt="Nova Tech"
+                        style="height: 40px; width: auto; vertical-align: middle;">
+                    <span>Nova</span>Tech
+                </a>
+                <div class="navbar-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html" class="active">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-btn">
+                    <a href="contact.html" class="blog-btn">Get a Quote</a>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="blog-subtitle">Our Blog</span>
+                <h1>Insights & Resources</h1>
+                <p>Discover the latest trends, tips, and insights on web development, design, and digital marketing.</p>
+                <div class="search-box">
+                    <form id="searchForm">
+                        <div class="search-input">
+                            <input type="text" placeholder="Search articles..." id="searchQuery">
+                            <button type="submit" class="search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="categories-container">
+                <div class="category-item active">
+                    <a href="#" data-category="all">All</a>
+                </div>
+                <div class="category-item">
+                    <a href="#" data-category="web-development">Web Development</a>
+                </div>
+                <div class="category-item">
+                    <a href="#" data-category="design">Design</a>
+                </div>
+                <div class="category-item">
+                    <a href="#" data-category="digital-marketing">Digital Marketing</a>
+                </div>
+                <div class="category-item">
+                    <a href="#" data-category="business">Business</a>
+                </div>
+                <div class="category-item">
+                    <a href="#" data-category="technology">Technology</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-content">
+                    <span class="article-category">Web Development</span>
+                    <h2>The Future of Web Development: Trends to Watch in 2023</h2>
+                    <p>Web development is constantly evolving with new technologies and approaches emerging every year.
+                        In this article, we explore the most significant trends that will shape the web development
+                        landscape in 2023 and beyond.</p>
+                    <div class="article-meta">
+                        <div class="author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author">
+                            <span>By John Davis</span>
+                        </div>
+                        <div class="date">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>June 15, 2023</span>
+                        </div>
+                        <div class="reading-time">
+                            <i class="far fa-clock"></i>
+                            <span>8 min read</span>
+                        </div>
+                    </div>
+                    <a href="blog-single.html" class="blog-btn">Read Article</a>
+                </div>
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                        alt="The Future of Web Development">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="blog-subtitle">Latest Articles</span>
+                <h2>Read Our Latest News</h2>
+                <p>Stay up to date with the latest industry news, tips, and insights from our experts.</p>
+            </div>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <div class="article-card" data-category="design">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="UI/UX Design Principles">
+                        </a>
+                        <span class="article-category">Design</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">10 Essential UI/UX Design Principles for Creating Outstanding
+                                User Experiences</a></h3>
+                        <p>Learn the fundamental principles that guide effective UI/UX design and how to implement them
+                            in your projects.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>June 10, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card" data-category="digital-marketing">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="SEO Strategies">
+                        </a>
+                        <span class="article-category">Digital Marketing</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">Advanced SEO Strategies That Will Boost Your Website's
+                                Visibility</a></h3>
+                        <p>Discover advanced SEO techniques and strategies that will help your website rank higher in
+                            search engine results.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>June 5, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card" data-category="web-development">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="JavaScript Frameworks">
+                        </a>
+                        <span class="article-category">Web Development</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">Comparing the Top JavaScript Frameworks: React vs. Vue vs.
+                                Angular</a></h3>
+                        <p>A comprehensive comparison of the most popular JavaScript frameworks to help you choose the
+                            right one for your next project.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>May 28, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>9 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card" data-category="business">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Digital Transformation">
+                        </a>
+                        <span class="article-category">Business</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">How Digital Transformation Is Reshaping Business in 2023</a></h3>
+                        <p>Explore how digital transformation is changing the business landscape and what companies can
+                            do to stay competitive.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>May 22, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-card" data-category="technology">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="AI in Business">
+                        </a>
+                        <span class="article-category">Technology</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">The Impact of Artificial Intelligence on Modern Business
+                                Operations</a></h3>
+                        <p>Learn how artificial intelligence is transforming business operations and what the future
+                            holds for AI in the workplace.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>May 18, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-card" data-category="web-development">
+                    <div class="article-image">
+                        <a href="blog-single.html">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Website Performance">
+                        </a>
+                        <span class="article-category">Web Development</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="blog-single.html">Improving Website Performance: Tips for Faster Load Times</a>
+                        </h3>
+                        <p>Discover practical strategies to optimize your website's performance and improve user
+                            experience through faster load times.</p>
+                        <div class="article-meta">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>May 12, 2023</span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="pagination-arrow disabled">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#" class="pagination-number active">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-number">3</a>
+                <span class="pagination-dots">...</span>
+                <a href="#" class="pagination-number">8</a>
+                <a href="#" class="pagination-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <span class="blog-subtitle">Stay Updated</span>
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get the latest articles, resources and updates directly to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" id="emailSubscribe" placeholder="Enter your email address" required>
+                            <button type="submit" class="blog-btn">
+                                Subscribe <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="form-privacy">
+                            <small>We respect your privacy and will never share your information.</small>
+                        </div>
+                        <div id="newsletterResponse" class="form-response"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-bg">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Let's Make Something Great Together</h2>
+                    <p>Ready to start your project? Contact us today and get a free consultation!</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="blog-btn blog-btn-light">Get Started</a>
+                    <a href="services.html" class="blog-btn blog-btn-outline">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo/logo.jpg" alt="Nova Tech"
+                                style="height: 40px; width: auto; vertical-align: middle; margin-right: 5px;">
+                            <span>Nova</span>Tech
+                        </a>
+                    </div>
+                    <p>We provide innovative solutions for businesses of all sizes. Our expertise in digital
+                        transformation helps clients achieve their goals.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">App Development</a></li>
+                        <li><a href="#">Brand Strategy</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Business Avenue<br>New York, NY 10001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+1 (234) 567-8901</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@yourcompany.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Monday - Friday: 9am - 5pm</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2023 YourCompany. All Rights Reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Blog JS -->
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
